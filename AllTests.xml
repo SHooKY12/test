@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ALL Tests">
+
+    <test name="a-t2" preserve-order="true" >
+        <classes>
+            <class name="TestSuite" />
+        </classes>
+    </test>
+</suite>
