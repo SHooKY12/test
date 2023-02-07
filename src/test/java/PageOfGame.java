@@ -36,10 +36,10 @@ public class PageOfGame extends TestSuite {
     }
 
     public void PlayGame() throws InterruptedException {
-        WebElement afterFocusTexts = driver.findElement(By.xpath("//span[@id='afterfocus']"));
+        WebElement aftterFocusTexts = driver.findElement(By.xpath("//span[@id='afterfocus']"));
         WebElement elementForFocus2 = driver.findElement(By.xpath("//span[@id='typefocus']"));
         String text = elementForFocus2.getAttribute("innerText");
-        String textForAddInList = afterFocusTexts.getAttribute("outerText");
+        String textForAddInList = aftterFocusTexts.getAttribute("outerText");
         texts.add(text);
         texts.addAll(Arrays.asList(textForAddInList.split(" ")));
         int counter = texts.size();
